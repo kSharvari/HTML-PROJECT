@@ -1,0 +1,639 @@
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="shopping.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+	<header>
+	<div class="container-fluid bg-dark text-light"> 
+     <div class="row">
+        <div class="col-sm-4">
+		  <ul class="mb-0">
+		  <li>
+            <select>
+                <option>English</option>
+                <option>French</option>
+                <option>Russian</option>
+                <option>Hindi</option>
+                <option>Chinese</option>
+            </select>
+         </li>
+		 <li><a href="#">Customer Login/Register</a></li>
+         </ul>
+        </div>
+
+        <div class="col-sm-8">
+            <!--Setting location links -->
+         <ul>
+		  <li style="float: right;"><img src="https://tse2.mm.bing.net/th?id=OIP.VO4EbAkrFuhkLen1E5c-rAHaHa&pid=Api&P=0" class="rounded-circle"  height="19px" width="19px">&nbsp;Settings</li>
+		 <li style="float: right;"><img src="https://tse2.mm.bing.net/th?id=OIP.pPRTIw9jOfnB6iqHxem84gHaHa&pid=Api&P=0" class="rounded-circle"  height="19px" width="19px">&nbsp;Track Order</li>
+		 <li style="float: right;"><img src="https://tse2.mm.bing.net/th?id=OIP.2Z41YG1rU348y9Gx8YCh5AHaHa&pid=Api&P=0" class="rounded-circle"  height="19px" width="19px">&nbsp;Store Location</li>
+		 </ul>
+        </div> 
+	 </div>
+    </div>
+
+        <div class="row navbar navbar-expand-sm bg-light custom-navbar">          
+            <div>
+               <a class="navbar-brand p-2" href="#" style="margin: auto;">
+                   <img class="custom-img" src="icon.PNG" alt="Logo">
+               </a>
+            </div>            
+                        <!--Input group for search -->
+                <div class="input-group" style=" margin: auto; width:auto;">
+                     <div class="input-group-prepend">
+                     <span class="input-group-text" style="width: 120px;">All categories</span>
+                    </div>
+                        <input class="form-control" style="width: 200px;" type="text" placeholder="Search">
+                     <div class="input-group-append">
+                        <button class="btn btn-danger" style="width: 70px;" type="submit">Search</button>
+                        </div>
+                  </div>
+              
+                <div>
+                        <a class="m-1" href="#" style="margin: auto; padding: auto;">
+                        <img src="Capture.PNG" height="40px" width="70px">
+                    </a>
+                        <a class="m-1" href="#" style="margin: auto; padding: auto;">
+                             <img src="cart.PNG" height="40px" width="70px">
+                    </a>
+                </div>             
+        </div>
+     </header>
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+
+        function myFunction1() {
+          var x = document.getElementById("myLinks1");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+<br>
+<div class="row">
+    <div class="custom-visible-sm col-sm-12">
+        <button class="btn btn-danger" data-toggle="collapse" data-target="#demo1" style="margin:auto;">Shop By Department</button>
+    </div>
+</div>
+        
+    <div class="row custom-bar">
+        <div class="col-lg-1">
+            
+        </div>
+        <div id="demo1" class="col-lg-3 col-sm-4">
+            <div class="unvisible">
+            <span class="custom-ib bg-danger mt-2 mb-2 text-light" style="display:inline-block">Shop By Department&nbsp;</span>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction1 ()">
+                <i class="fa fa-bars" style="padding: 10px;width: 35px;"></i>
+            </a>
+            </div>
+            <ul id="myLinks1" class="custom-border collapse show">
+                <li> <h5 style="margin-top: 5px;">Categories</h5></li>
+                <li><a href="#">Laptop and Computer</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li><a href="#">MAC Computers</a></li>
+                <li><a href="#">UltraBooks</a></li>
+                <li><a href="#">Printers and Ink</a></li>
+            </ul>
+        </div> 
+        <div class="col-lg-8 col-sm-8 topnav" style="margin: auto;">
+           
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" style="padding: 10px;width: 35px;"></i>
+                </a>
+            
+           
+           
+            <ul id="myLinks" class="floater">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                
+            </ul>
+           
+            </div>
+            <div id="carousel-demo" class="carousel carousel-dark slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-demo" data-slide-to="1"></li>
+                    <li data-target="#carousel-demo" data-slide-to="2"></li>
+
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.tMrWLkQomI6kAEqaoctdTAHaDs&pid=Api&P=0">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.uFMmHf-jomMTtlqKukQUFAHaD5&pid=Api&P=0">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.zGCi4sVkAYek4k5jDC6nqgHaFj&pid=Api&P=0">
+                    </div>
+                </div>
+
+                <div>
+                    <a class="carousel-control-prev" data-target="#carousel-demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-target="#carousel-demo" data-side="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div> 
+    </div>
+<br>
+    <div class="row">
+        <div class="custom-visible-sm col-sm-12">
+            <button class="btn btn-danger" data-toggle="collapse" data-target="#narrow-results" style="margin: auto;">Filter Options</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1">
+            <div class=" custom-visible">
+            <button class="btn btn-danger" data-toggle="collapse" data-target="#narrow-results">Filter Options</button>
+            </div>
+        </div>
+
+        <div id="narrow-results" class="col-lg-3 col-sm-4">
+            <h5 style="margin-left:8px; margin-top: 17px;">Filter By</h5>
+            
+                
+            <div id="demo" class="container-fluid custom-div collapse show">
+                <p class="custom-bold">Price</p>
+                Range: $100.00 - $1,700
+                <!--<div class="min-value numberVal">
+                    <input type="number" min="100" max="1700" value="200" disabled>
+                </div>
+                &nbsp;-
+                <div class="range-slider">
+                    <div class="progress"></div>
+                    <input type="range" class="range-min" min="0" max="1700" value="200">
+                    <input type="range" class="range-max" min="0" max="1700" value="1000">
+                </div>
+                &nbsp;-
+                <div class="min-value numberVal">
+                    <input type="number" min="100" max="1700" value="1000" disabled>
+                </div>
+                <script src="script.js"></script> -->
+                <br>
+                <button class="btn btn-secondary m-2">Filter</button>
+                <p class="custom-bold">Brands</p>
+                <p>Sony<span class="text-secondary">(12)</span></p>
+                <p>Panasonic<span class="text-secondary">(20)</span></p>
+                <p>Samsung<span class="text-secondary">(09)</span></p>
+                <p>Apple<span class="text-secondary">(04)</span></p>
+
+                <p class="custom-bold">Color</p>
+                <p><input type="color" id="favcolor" name="favcolor" value="#ff0000"></p>
+
+                <p class="custom-bold">Size</p>
+                <a class="custom-btn">S</a>
+                <a class="custom-btn">M</a>
+                <a class="custom-btn">L</a>
+                <a class="custom-btn">XL</a>
+
+            </div>
+
+            <div class="container">
+                <p class="custom-bold" style="margin-top: 15px;">Compare Products</p>
+                <p class="text-secondary">You have no products to compare</p>
+            </div>
+
+            <div class="container">
+                <img src="Ad.PNG" style="width:inherit;">
+            </div>
+
+            <div class="container-fluid custom-div">
+                <p class="custom-bold">Latest Products</p>
+
+                <div class="media" style="border-bottom: 1px solid lightgrey;">
+                    <img src="Watch.PNG" style="width: 90px;height: 90px;">
+                    <div class="media-body">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product </h6>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                    </div>
+                </div>
+
+                <div class="media" style="border-bottom: 1px solid lightgrey; margin-top: 7px;" >
+                    <img src="Watch1.PNG" style="width: 90px;height: 90px;">
+                    <div class="media-body">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product </h6>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                    </div>
+                </div>
+
+                <div class="media" style="border-bottom: 1px solid lightgrey; margin-top: 7px;">
+                    <img src="washing.PNG" style="width: 90px;height: 90px;">
+                    <div class="media-body">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product </h6>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                    </div>
+                </div>
+
+                <div class="media" style=" margin-top: 7px;">
+                    <img src="Mixer.PNG" style="width: 90px;height: 90px;">
+                    <div class="media-body">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product </h6>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-sm-8" style="border-bottom: 1px solid lightgrey; padding-bottom: 8px; margin: auto;">
+            <div class="container-fluid custom-div">
+                <div class="d-flex justify-content-around display-col">
+                    <div class="align-img">
+                    <img src="washing.PNG"  style="width:220px; height:250px;">
+                    </div>
+                    <div class="custom-center">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product Name Specification </h6>
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                       
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color: darkgray;">&starf;</span>                        
+
+                        <p class="text-secondary custom-para">
+                            <a href="#" style="color:lightslategray;text-decoration:none;">10 review(s)</a>
+                        </p>
+                        <p class="custom-para">
+                            <a href="#" style="text-decoration:none;">Add review</a>
+                        </p>
+
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+                        <p style="font-size: 14px; margin-top: 3px;">
+                            This is some text describing the product.
+                            This is some text describing the product and it's specifications.
+                            This is some text describing the product and it's specifications.
+                        </p>
+
+                        <a class="btn btn-danger" href="#">Add to cart</a>
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.eaEsTtW-k-WNm_AA77_vhgHaHE&pid=Api&P=0" style="margin-left:5px;width:27px;height:27px;"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-div">
+                <div class="d-flex justify-content-around display-col">
+                    <div class="align-img">
+                    <img src="Mixer.PNG"  style="width:220px; height:250px;">
+                    </div>
+                    <div class="custom-center">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product Name Specification </h6>
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                       
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color: darkgray;">&starf;</span>       
+                        
+                        <p class="text-secondary custom-para">
+                            <a href="#" style="color:lightslategray;text-decoration:none;">10 review(s)</a>
+                        </p>
+                        <p class="custom-para">
+                            <a href="#" style="text-decoration:none;">Add review</a>
+                        </p>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                        <p style="font-size: 14px; margin-top: 3px;">
+                            This is some text describing the product.
+                            This is some text describing the product and it's specifications.
+                            This is some text describing the product and it's specifications.
+                        </p>
+
+                        <a class="btn btn-danger" href="#">Add to cart</a>
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.eaEsTtW-k-WNm_AA77_vhgHaHE&pid=Api&P=0" style="margin-left:5px;width:27px;height:27px;"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-div">
+                <div class="d-flex justify-content-around display-col">
+                    <div class="align-img">
+                    <img src="Mobile.PNG"  style="width:220px; height:250px;">
+                    </div>
+                    <div class="custom-center">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product Name Specification </h6>
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                       
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color: darkgray;">&starf;</span>   
+                        
+                        <p class="text-secondary custom-para">
+                            <a href="#" style="color:lightslategray;text-decoration:none;">10 review(s)</a>
+                        </p>
+                        <p class="custom-para">
+                            <a href="#" style="text-decoration:none;">Add review</a>
+                        </p>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                        <p style="font-size: 14px; margin-top: 3px;">
+                            This is some text describing the product.
+                            This is some text describing the product and it's specifications.
+                            This is some text describing the product and it's specifications.
+                        </p>
+
+                        <a class="btn btn-danger" href="#">Add to cart</a>
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.eaEsTtW-k-WNm_AA77_vhgHaHE&pid=Api&P=0" style="margin-left:5px;width:27px;height:27px;"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-div">
+                <div class="d-flex justify-content-around display-col">
+                    <div class="align-img">
+                    <img src="Watch1.PNG"  style="width:220px; height:250px;">
+                    </div>
+                    <div class="custom-center">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product Name Specification </h6>
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                       
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color: darkgray;">&starf;</span>   
+                        
+                        <p class="text-secondary custom-para">
+                            <a href="#" style="color:lightslategray;text-decoration:none;">10 review(s)</a>
+                        </p>
+                        <p class="custom-para">
+                            <a href="#" style="text-decoration:none;">Add review</a>
+                        </p>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                        <p style="font-size: 14px; margin-top: 3px;">
+                            This is some text describing the product.
+                            This is some text describing the product and it's specifications.
+                            This is some text describing the product and it's specifications.
+                        </p>
+
+                        <a class="btn btn-danger" href="#">Add to cart</a>
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.eaEsTtW-k-WNm_AA77_vhgHaHE&pid=Api&P=0" style="margin-left:5px;width:27px;height:27px;"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-div">
+                <div class="d-flex justify-content-around display-col">
+                    <div class="align-img">
+                     <img src="Watch.PNG"  style="width:220px; height:250px;">
+                    </div>
+                    <div class="custom-center">
+                        <small class="text-secondary" style="font-size: 10px;">Product Type</small>
+                        <h6>Brand - Product Name Specification </h6>
+                     
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                       
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color:yellow;">&starf;</span>                        
+                        <span style="font-size:25px;color: darkgray;">&starf;</span>  
+
+                        <p class="text-secondary custom-para">
+                            <a href="#" style="color:lightslategray;text-decoration:none;">10 review(s)</a>
+                        </p>
+                        <p class="custom-para">
+                            <a href="#" style="text-decoration:none;">Add review</a>
+                        </p>
+                        <p class="text-danger" style="font-size:17px;font-weight:600;">$200</p>
+
+                        <p style="font-size: 14px; margin-top: 3px;">
+                            This is some text describing the product.
+                            This is some text describing the product and it's specifications.
+                            This is some text describing the product and it's specifications.
+                        </p>
+
+                        <a class="btn btn-danger" href="#">Add to cart</a>
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.eaEsTtW-k-WNm_AA77_vhgHaHE&pid=Api&P=0" style="margin-left:5px;width:27px;height:27px;"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 social-media col-sm-12">
+            <ul style="text-align:right; margin: auto;">
+                <li> <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li><a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li><a href="#" class="fa fa-snapchat-ghost"></a>
+                </li>
+                <li><a href="#" class="fa fa-reddit"></a>
+                </li>
+            </ul>
+    </div>
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+
+            <div class="col-sm-4 col-md-3">
+             </div>
+
+            <div class="col-sm-6 col-md-7">
+            <div class="container center">
+                <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+                </div>
+                <span style="display:inline-block; font-weight: 500;">
+                    <span class="text-danger">Showing 1-12 </span><span class="text-secondary">Of 30 Results</span>
+                </span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-danger center-text text-light" style="text-align: center; padding: 5px;">
+            <div class="row">
+                <div class="col-lg-1 col-sm-1">
+                </div>
+
+                <div class="col-lg-5 col-sm-5 small-style">
+                   <p style="vertical-align: center;"> SIGN UP TO<span class="cap-style"> NEWSLETTER AND FREE SHIPPING</span> FOR FIRST SHOPPING</p>
+                </div>
+
+                <div class="col-lg-6 col-sm-6" style="padding:20px;">
+                    <div class="input-group pill-style w-75">
+                        <input type="text" class="form-control" placeholder="Email address">
+
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" style="width: 90px;">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 col-sm-1">
+                </div>
+
+                <div class="col-sm-11 col-lg-3" style="padding: 5px;">
+
+                    <img src="icon.PNG" alt="Logo" style="width:210px;height:100px;">
+                    <p class="small-font">
+                       <strong> Complex </strong>is a premium template theme with advanced admin module.<br>
+                    It's extrememly customizable, easy to use and fully responsible and retina ready.
+                    </p><br>
+                    <p class="small-font">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.2Z41YG1rU348y9Gx8YCh5AHaHa&pid=Api&P=0" class="rounded-circle"  height="19px" width="19px">&nbsp;
+                        <strong>Address:</strong> 123, Heaven Stress, Beverly Hills, Melbourne, USA
+                    </p>
+                        <p class="small-font">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.BCOgkDFoXALNblLx8Mi0IQHaHa&pid=Api&P=0" class="rounded-circle"  height="19px" width="19px">&nbsp;
+                        <strong>Email:</strong>Contact@xyz.com
+                        </p>
+
+                    <p class="small-font">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.1UZS-oNgG8gwy1E7VqyzWwHaHa&pid=Api&P=0"class="rounded-circle"  height="19px" width="19px">&nbsp;
+                        <strong>Contact:</strong>(800) 123 455 6543
+                    </p>
+              
+                </div>
+
+                <div class="col-sm-3 col-lg-2" style="padding:5px;">
+                    <br><br>
+                    <p class="format-align">
+                    <strong>Information</strong>
+                    </p>
+
+                    <p class="small-font format-align">
+                        About Us
+                    </p>
+
+                    <p class="small-font format-align" >
+                        Contact Us
+                    </p>
+
+                    <p class="small-font format-align" >
+                        All Collections
+                    </p>
+
+                    <p class="small-font format-align" >
+                        Privacy Policy
+                    </p>
+
+                    <p class="small-font format-align" >
+                        Terms and conditions
+                    </p>
+                </div>
+
+                <div class="col-sm-3 col-lg-2" style="padding:5px;">
+                    <br><br>
+                    <p class="format-align">
+                    <strong>Categories</strong>
+                    </p>
+
+                    <p class="small-font format-align">
+                        Fashion
+                    </p>
+
+                    <p class="small-font format-align" >
+                        Electronics
+                    </p>
+
+                    <p class="small-font format-align" >
+                        Furniture and Decor
+                    </p>
+
+                    <p class="small-font format-align" >
+                        Jewelry and Watches
+                    </p>
+
+                    <p class="small-font format-align" >
+                        Health and Beauty
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-lg-3" style="padding:5px;">
+                    <br><br>
+                    <p class="format-align">
+                    <strong>On Sale Products</strong>
+                    </p>
+
+        
+                        <div class="media" style="border-bottom: 1px solid lightgrey;">
+                            <img src="Watch.PNG" style="width: 75px;height: 75px;">
+                            <div class="media-body">
+                                <small class="text-secondary" style="font-size: 10px; display: block;">Product Type</small>
+                                <Strong style="font-size:15px;">Brand - Product </Strong>
+                                <p class="text-danger" style="font-size:15px;font-weight:600;">$200</p>
+        
+                            </div>
+                        </div>
+        
+                        <div class="media" style="border-bottom: 1px solid lightgrey; margin-top: 7px;" >
+                            <img src="Watch1.PNG" style="width: 75px;height: 75px;">
+                            <div class="media-body">
+                                <small class="text-secondary" style="font-size: 10px; display: block;">Product Type</small>
+                                <Strong style="font-size:15px;">Brand - Product </Strong>
+                                <p class="text-danger" style="font-size:15px;font-weight:600;">$200</p>
+        
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                
+                    
+                </div>
+                
+                    
+            </div>
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
